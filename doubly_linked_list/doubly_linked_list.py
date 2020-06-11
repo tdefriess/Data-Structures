@@ -50,7 +50,7 @@ class DoublyLinkedList:
     def add_to_head(self, value):
         self.length += 1
 
-        if not self.head:
+        if not self.head: # and not self.tail
             new_node = ListNode(value)
             self.head = new_node
             self.tail = new_node
